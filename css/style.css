@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1145px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #2F281E;
+  padding: 1px 0;
+  height: 27px;
+  transition: 0.3s border-color;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+li:hover {
+  border-bottom: 1px solid #2F281E;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2F281E;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  color: #2F281E;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #2F281E;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2F281E;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2F281E;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #544837;
+}
+
+button {
+  background: #FF9900;
+  border-radius: 4px;
+  height: 53px;
+  width: 175px;
+  line-height: 53px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  transition: 0.3s;
+}
+button:hover {
+  border-radius: 35px;
+}
+
+.header {
+  height: 78px;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.headercontainer nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 605px;
+}
+.headercontainer nav ul {
+  display: flex;
+  max-width: 330px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.headercontainerbuttons {
+  max-width: 230px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.headercontainerbuttons button {
+  max-width: 110px;
+}
+.headercontainerbuttons button:first-child {
+  border: 1px solid #BCD0E5;
+  color: #173A56;
+  background-color: transparent;
+}
+
+.getstarted {
+  margin-bottom: 110px;
+}
+.getstartedcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.getstartedcontainerfirstitem {
+  padding-top: 83px;
+}
+.getstartedcontainerfirstitem h1 {
+  margin-bottom: 30px;
+}
+.getstartedcontainerfirstitem p {
+  margin-bottom: 45px;
+  font-size: 18px !important;
+}
+.getstartedcontainerfirstitemdoublebuttons {
+  display: flex;
+  width: 100%;
+  max-width: 366px;
+  justify-content: space-between;
+  align-items: center;
+}
+.getstartedcontainerfirstitemdoublebuttons div {
+  max-width: 161px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  align-items: center;
+  color: #FF9900 !important;
+}
+.getstartedcontainerfirstitemdoublebuttons div:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.benefits {
+  padding-bottom: 90px;
+  margin-bottom: 120px;
+}
+.benefitscontainer {
+  text-align: center;
+}
+.benefitscontainerlist {
+  display: flex;
+  width: 100%;
+  padding: 60px 15px;
+  justify-content: space-between;
+}
+.benefitscontainerlistitem {
+  text-align: start;
+}
+.benefitscontainerlistitem img {
+  margin-bottom: 30px;
+}
+.benefitscontainerlistitem h3 {
+  margin-bottom: 13px;
+}
+
+.aboutus {
+  margin-bottom: 100px;
+}
+.aboutuscontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutuscontainerfirst {
+  padding-top: 30px;
+}
+.aboutuscontainerfirst p {
+  margin-bottom: 25px;
+}
+.aboutuscontainerfirst p:first-child {
+  margin-bottom: 3px;
+}
+.aboutuscontainerfirst h2 {
+  margin-bottom: 22px;
+}
+.aboutuscontainerfirst h4:first-child {
+  margin-top: 5px;
+}
+
+.productmanagers {
+  margin-bottom: 105px;
+}
+.productmanagerscontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.productmanagerscontainersecond {
+  padding-top: 49px;
+}
+.productmanagerscontainersecond p:first-child {
+  margin-bottom: 3px;
+}
+.productmanagerscontainersecond h2 {
+  margin-bottom: 22px;
+}
+.productmanagerscontainersecondlistitem {
+  display: flex;
+  align-items: center;
+  max-width: 430px;
+  width: 100%;
+  margin-top: 30px;
+}
+.productmanagerscontainersecondlistitem img {
+  margin-right: 30px;
+}
+
+.superhero {
+  min-height: 835px;
+  background-image: url(../images/Oval.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.superherocontainer {
+  text-align: center;
+  padding-top: 230px;
+  position: relative;
+}
+.superherocontainer h2 {
+  margin-bottom: 22px;
+}
+.superherocontainer p {
+  margin-bottom: 44px;
+}
+.superherocontaineritem {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.superherocontaineritem::before {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+  border-radius: 26.5px;
+  height: 53px;
+  line-height: 53px;
+  width: 263px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #2F281E;
+  content: "I can design you website";
+  top: -40px;
+}
+
+.leftsided::before {
+  left: -205px;
+}
+
+.rightsided::before {
+  right: -215px;
+}
+
+.strategies {
+  margin-bottom: 120px;
+}
+.strategiescontainer h2 {
+  margin-bottom: 9px;
+}
+.strategiescontainerslider {
+  width: 100%;
+}
+.strategiescontainerslideritem {
+  max-width: 350px;
+  width: 100%;
+  height: 360px;
+  margin-right: 40px;
+}
+.strategiescontainerslideritem img {
+  margin-bottom: 25px;
+}
+.strategiescontainerslideritem p {
+  margin-bottom: 12px;
+}
+
+.slick-dots {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 68px;
+  margin-top: 45px;
+}
+.slick-dots li {
+  transition: none;
+}
+.slick-dots li:hover {
+  border-bottom: none !important;
+}
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  font-size: 0px;
+  border-radius: 50%;
+  background-color: #979797;
+}
+.slick-dots .slick-active button {
+  background-color: #FF9900;
+}
+
+.footer {
+  min-height: 308px;
+}
+.footercontainer {
+  padding-top: 100px;
+}
+.footercontainerlogo {
+  height: 35px;
+}
+.footercontainerflex {
+  display: flex;
+  padding-left: 330px;
+  width: 100%;
+  white-space: nowrap;
+}
+.footercontainerflexfirstlist {
+  max-width: 73px;
+  margin-right: 130px;
+}
+.footercontainerflexfirstlist li {
+  display: inline;
+}
+.footercontainerflexsecondlist {
+  max-width: 133px;
+  margin-right: 83px;
+}
+.footercontainerflexsecondlist li {
+  display: inline;
+}
+.footercontainerflexform {
+  width: 100%;
+}
+.footercontainerflexform input {
+  display: block;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #BCD0E5;
+  height: 48px;
+  max-width: 329px;
+  width: 100%;
+  margin-top: 25px;
+  padding-left: 15px;
+  margin-bottom: 21px;
+}
+
+#burger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #burger {
+    display: block;
+    z-index: 10000;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  #burger::before,
+#burger::after,
+#burger span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all ease 0.5s;
+    background-color: #2F281E;
+  }
+
+  #burger::before,
+#burger::after {
+    content: "";
+  }
+
+  #burger::before {
+    top: 0;
+  }
+
+  #burger::after {
+    bottom: 0;
+  }
+
+  #burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .getstarted {
+    padding-top: 100px;
+  }
+
+  .header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255, 153, 0, 0.8);
+  }
+
+  nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+    max-width: none !important;
+    background-color: rgba(255, 153, 0, 0.8);
+    padding: 30px;
+    justify-content: space-around !important;
+    transition: 0.3s;
+    flex-direction: column-reverse;
+    justify-content: flex-end !important;
+  }
+  nav ul {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: min-content;
+    min-height: 300px !important;
+    max-width: 50px !important;
+    margin-top: 50px;
+  }
+  nav ul li {
+    font-size: 30px;
+  }
+
+  .active {
+    transform: translateY(0);
+  }
+
+  .getstartedcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefitscontainerlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutuscontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productmanagerscontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .superherocontaineritem {
+    display: none;
+  }
+
+  .strategiescontainerslider {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .slick-dots {
+    max-width: none !important;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .strategiescontainer {
+    text-align: center;
+  }
+}
